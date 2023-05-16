@@ -1,0 +1,95 @@
+.container input,
+.container textarea {
+  border-color: transparent;
+  outline: none;
+  border-bottom: var(--input-border-bottom) solid 1px;
+  display: inline-block;
+  -webkit-transition: var(--transition);
+  -o-transition: var(--transition);
+  transition: var(--transition);
+  position: relative;
+}
+.container input:focus,
+.container textarea:focus {
+  border-bottom: var(--main-color) solid 2px;
+}
+.container textarea {
+  resize: none;
+  height: 1.5rem;
+  font-size: 1rem;
+  overflow-y: hidden;
+  line-height: 1rem;
+  min-height: 25px;
+}
+.container {
+  width: 90%;
+  max-width: 700px;
+  margin: 1rem auto;
+}
+.surveyInfo {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 1rem 1.5rem 1.5rem 1.5rem;
+  gap: 0.5rem;
+  border-radius: 0.5rem;
+  border-top: 10px solid var(--main-color);
+}
+
+/* Question component */
+
+.question {
+  background-color: white;
+  margin-top: 1rem;
+  padding: 1rem 1.5rem 1.5rem 1.5rem;
+  border-radius: 0.5rem;
+}
+.questionAndType {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: 3rem;
+}
+.questionAndType input {
+  width: 50%;
+  height: 100%;
+  background-color: var(--input-background);
+}
+.questionAndType .select {
+  width: 30%;
+  height: 100%;
+}
+.answer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+.multiOptions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 2rem;
+  gap: 1rem;
+  width: 100%;
+}
+.multiOptions input:nth-child(2) {
+  height: 100%;
+  width: 50%;
+}
